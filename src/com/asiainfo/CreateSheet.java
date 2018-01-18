@@ -18,12 +18,12 @@ public class CreateSheet {
 	public static void main(String[] args) {
 		// 创建工作表前先创建工作簿
 		Workbook workbook = new HSSFWorkbook();
-		workbook.createSheet("first sheet");
-		workbook.createSheet("second sheet");
+		workbook.createSheet("创建的第一个sheet");
+		workbook.createSheet("创建的第二个sheet");
 		workbook.createSheet();
 		OutputStream out = null;
 		try {
-			out = new FileOutputStream("/Users/zhangzhiwang/Desktop/poi_demo/CreateSheet.xls");
+			out = new FileOutputStream("/Users/zhangzhiwang/Documents/poi/CreateSheet.xls");
 			workbook.write(out);
 			System.out.println("OK!");
 		} catch (FileNotFoundException e) {

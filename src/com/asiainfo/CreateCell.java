@@ -40,7 +40,7 @@ public class CreateCell {
 		//输出工作簿
 		OutputStream out = null;
 		try {
-			out = new FileOutputStream("/Users/zhangzhiwang/Desktop/poi_demo/CreateCell.xls");
+			out = new FileOutputStream("/Users/zhangzhiwang/Documents/poi/CreateCell.xls");
 			workbook.write(out);
 			System.out.println("OK!");
 		} catch (IOException e) {

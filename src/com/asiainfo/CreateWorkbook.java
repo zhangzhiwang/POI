@@ -19,7 +19,7 @@ public class CreateWorkbook {
 		Workbook workbook = new HSSFWorkbook();
 		OutputStream out = null;
 		try {
-			out = new FileOutputStream("/Users/zhangzhiwang/Desktop/poi_demo/aaa.xls");
+			out = new FileOutputStream("/Users/zhangzhiwang/Documents/poi/创建一个工作簿.xls");
 			workbook.write(out);
 		} catch (Exception e) {
 			e.printStackTrace();
